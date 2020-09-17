@@ -19,6 +19,8 @@ class _HomeState extends State<Home> {
         'https://image-cdn.essentiallysports.com/wp-content/uploads/20200524173654/E4445C6D-C91F-424A-A6A6-D94F65C79936.png';
     const imageUrlAbd =
         'https://cdn.dnaindia.com/sites/default/files/styles/full/public/2018/05/23/685513-ab-de-villiers.jpg';
+    const imageUrlVirat = 'https://s.ndtvimg.com/images/entities/300/virat-kohli-967.png';
+    const imageUrlGayle = 'https://image-cdn.essentiallysports.com/wp-content/uploads/20200423191310/1197438_1296x729.jpg';
 
     return Scaffold(
       appBar: AppBar(
@@ -194,10 +196,10 @@ class _HomeState extends State<Home> {
                               imageUrlLara),
                           _buildCard("AB de Villiers", "Right Hand Batsman",
                               true, imageUrlAbd),
-                          _buildCard("AB de Villiers", "Right Hand Batsman",
-                              true, imageUrlAbd),
-                          _buildCard("AB de Villiers", "Right Hand Batsman",
-                              true, imageUrlAbd),
+                          _buildCard("Virat Kohli", "Right Hand Batsman",
+                              true, imageUrlVirat),
+                          _buildCard("Chris Gayle", "Right Hand Batsman",
+                              false, imageUrlGayle),
                         ],
                       ))
                 ],
@@ -271,9 +273,9 @@ class _HomeState extends State<Home> {
             SizedBox(height: 15.0),
             Expanded(
                 child: Container(
-                    width: 175.0,
+                    width: 200.0,
                     decoration: BoxDecoration(
-                      color: !isOnline ? Colors.grey : Colors.green,
+                      color: !isOnline ? Colors.amber : Colors.green,
                       borderRadius: BorderRadius.only(
                           bottomLeft: Radius.circular(10.0),
                           bottomRight: Radius.circular(10.0)),
